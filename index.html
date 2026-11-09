@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Về Đích Cùng Bác Hồ</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div id="man-hinh-game">
+    <!-- Thanh thông số: Đạn tối đa 5 viên ở góc phải trên, Tiền và Gợi ý -->
+    <div id="thanh-thong-so">
+      <div class="chi-so">🪙 Tiền: <span id="so-tien">0</span></div>
+      <div class="chi-so">🔫 Đạn: <span id="so-luong-dan">5</span>/5</div>
+      <button id="nut-goi-y" onclick="hienThiGoiY()">Gợi ý 💡</button>
+    </div>
+
+    <!-- Màn chơi Canvas -->
+    <canvas id="canvas-game" width="800" height="400"></canvas>
+
+    <!-- Khu vực điều khiển bằng cách chạm trên điện thoại -->
+    <div id="dieu-khien-mobile">
+      <button class="nut-d-mobile" onclick="nhayLen()">NHẢY ⬆️</button>
+      <button class="nut-d-mobile" onclick="banSung()">BẮN 🔫</button>
+    </div>
+
+    <!-- Hộp câu hỏi lịch sử và gợi ý -->
+    <div id="hop-cau-hoi" class="an-hop">
+      <div class="noi-dung-hop">
+        <h3 id="tieu-de-cau-hoi">🎁 Hộp quà tri thức lịch sử</h3>
+        <p id="noi-dung-cau-hoi">Nội dung câu hỏi...</p>
+        <div id="khung-goi-y" class="goi-y-an">💡 <b>Gợi ý:</b> <span id="text-goi-y">Đang tải gợi ý...</span></div>
+        <div id="danh-sach-dap-an"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
